@@ -2,46 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timothy Junior</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><img src="assets/img/g shaped letter.png" alt="image" width="50" height="50"></div>
+    <!-- Project Page -->
+    <div class="project-page">
+        <header>
+            <div class="logo"><img src="assets/img/g shaped letter.png" alt="g shaped letter" width="50px"
+                    height="50px"></div>
+            <nav>
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="project-container">
+            <div class="left-section">
+                <div class="intro-content">
+                    <p class="time">Hi, I am</p>
+                    <h1>Timothy Junior</h1>
+                    <p class="subtitle">Front-end Designer / UI Designer</p>
 
-    <main>
-        <section class="intro">
-            <div class="left">
-                <p class="greeting">Hi, I am</p>
-                <h1>Timothy Junior</h1>
-                <p class="subtitle">Front-end Developer // UI Designer</p>
-                <div class="social-icons">
-                    <a href="assets/img/git main.png"><i class="fab fa-github"></i></a>
-                    <a href="assets/img/linkten.png"><i class="fab fa-linkedin"></i></a>
-                    <a href="assets/img/dribble.png"><i class="fab fa-dribbble"></i></a>
                 </div>
-                <div class="right">
-                    <img src="assets/img/25373d0b-77df-4d67-ad70-ca4d02326952-1_all_315.jpg" alt="Timothy Junior" />
+            </div>
+
+            <div class="right-section">
+                <div class="image-placeholder">
+                    <!-- Image will be placed here -->
+                    <img src="assets/img/profile_pic-removebg-preview.png" alt="Placeholder Image">
                 </div>
-        </section>
-    </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizontal Line Separator -->
+    <div class="section-separator"></div>
+
+    <!-- About Page -->
+    <section id="about" class="page-section">
+        <h2>ABOUT ME</h2>
+        <p>I am a Student of Code Campus.</p>
+
+        <div class="divider"></div>
+
+        <h3>EXPLORE</h3>
+        <p>Feel free to explore the page and give suggestions.</p>
+
+        <div class="divider"></div>
+
+        <div class="service">
+            <h4>DESIGN</h4>
+            <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and
+                consult you during the job.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="service">
+            <h4>DEVELOPMENT</h4>
+            <p>I am very skilled in the development of websites.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="service">
+            <h4>MAINTENANCE</h4>
+            <p>I try my best to update this site regulary.</p>
+        </div>
+    </section>
+
+    <!-- Horizontal Line Separator -->
+    <div class="section-separator"></div>
+
+    <!-- Skills Page -->
+    <section id="skills" class="page-section">
+        <h2>SKILLS</h2>
+
+        <h3>USING NOW:</h3>
+        <div class="skills-grid">
+            <div class="skill"><img src="assets/img/html.png" alt="html"></div>
+            <div class="skill"><img src="assets/img/css main.png" alt="css"></div>
+            <div class="skill"><img src="assets/img/figma main.png" alt="figma"></div>
+            <div class="skill"><img src="assets/img/github.png" alt="github"></div>
+
+
+        </div>
+
+        <h3>LEARNING:</h3>
+        <div class="skills-grid">
+            <div class="skill"><img src="assets/img/node.js" alt="node.js" width="100px" height="80px"></div>
+            <div class="skill"><img src="assets/img/sass.png" alt="sass" width="100px" height="80px"></div>
+            <div class="skill"><img src="assets/img/javascript.png" alt="javascript" width="100px" height="70px"></div>
+        </div>
+
+        <h3>OTHER SKILLS:</h3>
+        <div class="skills-grid">
+            <div class="skill"><img src="assets/" alt="c++"></div>
+            <div class="skill"><img src="assets/" alt="c"></div>
+        </div>
+    </section>
+
+    <!-- Horizontal Line Separator -->
+    <div class="section-separator"></div>
+
+    <!-- Portfolio Page -->
+    <section id="portfolio" class="page-section">
+        <h2>PORTFOLIO</h2>
+
+        <div class="portfolio-filter">
+            <button class="filter-btn active">ALL</button>
+            <button class="filter-btn">GOOD</button>
+            <button class="filter-btn">DESIGNES</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h4><strong>Here are some of the designs, I have been able to create with HTML & CSS</strong></h4>
+                <img src="assets/img/IMG_2264.jpeg" alt="Portfolio Item 1" width="250px" height="150px">
+                <p class="portfolio-description">Car Rental Page.</p>
+                <img src="assets/img/IMG_2014.jpeg" alt="Portfolio Item 2" width="250px" height="150px">
+                <p class="portfolio-description">Car Dealership page.</p>
+                <img src="assets/img/odin project.jpg" alt="Portfolio Item 3" width="250px" height="150px">
+                <p class="portfolio-description">Odin Project</p>
+                
+
+            </div>
+            <!-- More portfolio items would go here -->
+        </div>
+    </section>
+
+    <!-- Horizontal Line Separator -->
+    <div class="section-separator"></div>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page-section">
+        <h2>CONTACT</h2>
+
+        <p><strong>If u have any questions feel free to reach out to us, for more information</strong></p>
+        <p>pls fill in the form below with the following information</p>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">ENTER YOUR NAME*</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">ENTER YOUR EMAIL*</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="message">YOUR MESSAGE*</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Feel free to contact for more information or any acquires.</p>
+            <div class="footer-links">
+                <a href="#">SUBMIT</a>
+                <a href="#">BACK TO TOP</a>
+            </div>
+            <p class="footer-info">&copy; 2025 Timothy junior, All rights reserved.</p>
+            <!--<p class="footer-dimensions">7719 × 7166.84</p>-->
+        </div>
+    </footer>
 </body>
 
 </html>
